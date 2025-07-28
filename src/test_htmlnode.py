@@ -1,5 +1,6 @@
 import unittest
 from htmlnode import HTMLNode
+from inline_markdown import extract_markdown_images, extract_markdown_links
 from leafnode import LeafNode
 
 
