@@ -100,12 +100,14 @@ class TestSplitNode(unittest.TestCase):
                 TextNode(" word and a ", TextType.TEXT),
                 TextNode("code block", TextType.CODE),
                 TextNode(" and an ", TextType.TEXT),
-                TextNode("image", TextType.IMAGE, "https://i.imgur.com/zjjcJKZ.png"),
+                TextNode("image", TextType.IMAGE,
+                         "https://i.imgur.com/zjjcJKZ.png"),
                 TextNode(" and a ", TextType.TEXT),
                 TextNode("link", TextType.LINK, "https://boot.dev"),
             ],
             nodes,
         )
+
 
 if __name__ == "__main__":
     unittest.main()
